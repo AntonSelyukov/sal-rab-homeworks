@@ -28,12 +28,12 @@ function calcDiscount(sum, min, discount) {
 
     // Задание №2.2. Рассчитать скидку
 
-    // создайте переменную discountSum
+    let disountSum// создайте переменную discountSum
 
-    // если productsSum больше или равно discountMinSum,
-    // то присвойте discountSum значение discountPart процентов от productsSum,
-    // иначе присвойте discountSum значение 0
-
+    if (productsSum >= discountMinSum) { // если productsSum больше или равно discountMinSum,
+        discountSum = (discountPart * productsSum) / 100 // то присвойте discountSum значение discountPart процентов от productsSum,
+    } else discountSum = 0; // иначе присвойте discountSum значение 0
+    
     // Конец решения задания №2.2.
 
     return discountSum;
